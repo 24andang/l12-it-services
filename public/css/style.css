@@ -1,0 +1,122 @@
+button {
+    border: none;
+    width: fit-content;
+    padding: 6px;
+    background-color: lightgrey;    
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 4px;
+}
+
+thead { 
+    background-color: lightgrey;
+    position: sticky;
+    top: 0;
+    border: 1px solid black;
+    border-collapse: separate;
+}
+
+table tr.hidden-row {
+    visibility: collapse;
+}
+
+.full-screen {
+    height: 90vh;
+    width: 100%;
+    overflow: scroll;
+}
+
+.sm-icon {
+    width: 16px;
+    height: auto;
+    fill: red;
+}
+.xs-width { width: 24px; }
+.sm-width { width: 18%; }
+.md-width { width: 26%;}
+.lg-width { width: 72%; }
+.sm-input-width { width: 24%; }
+.md-input-width { width: 54%; }
+
+.sm-mr { margin-right: 8px; }
+.sm-mb { margin-bottom: 8px; }
+.sm-mt { margin-top: 8px; }
+
+.stky-0 {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.f-between {
+    display: flex;
+    justify-content: space-between;
+    align-item: center;
+}
+
+.f-layout { 
+    display: flex;
+    gap: 2%;
+ }
+
+.navbar {
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px;
+}
+
+.navbar a {
+    color: grey;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: darkslategrey;
+    font-weight: bold;
+}
+
+.card-flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 1% 2%;
+    background-color: ghostwhite;
+    border: 1px solid lightgrey;
+}
+
+.card-box {
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    flex: 1;
+    min-width: 0;
+}
+
+.card-box-sm {
+    max-height: 240px;
+    overflow-y: auto;
+    min-width: 0;
+}
+
+.card-box table {
+    width: 100%;
+}
+
+.btn-link {
+    background-color: transparent;
+}
+
+.good {
+    color: green;
+}
+
+.bad {
+    color: red;
+}
