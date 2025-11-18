@@ -21,9 +21,19 @@ class Navbar extends Component
         return redirect('/handover');
     }
 
+    public function loan()
+    {
+        return redirect('/loan');
+    }
+
     public function config()
     {
         return redirect('/config');
+    }
+
+    public function pc()
+    {
+        return redirect('/pc');
     }
 
     public function logout()

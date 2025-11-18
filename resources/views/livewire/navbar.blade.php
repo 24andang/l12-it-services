@@ -4,6 +4,8 @@
         <nav class="navbar">
             <a href="#" wire:click.prevent="stock">Stock</a>
             <a href="#" wire:click.prevent="handover">Serah Terima</a>
+            <a href="#" wire:click.prevent="loan">Pinjam Aset</a>
+            <a href="#" wire:click.prevent="pc">Data PC</a>
             <a href="#" wire:click.prevent="config">Config</a>
         </nav>
         <button

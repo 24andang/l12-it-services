@@ -4,7 +4,9 @@ use App\Http\Middleware\Auth;
 use App\Livewire\Config;
 use App\Livewire\Dashboard;
 use App\Livewire\Handover;
+use App\Livewire\Loan;
 use App\Livewire\Login;
+use App\Livewire\Pc;
 use App\Livewire\Stock;
 use Illuminate\Support\Facades\Route;
 
@@ -22,5 +24,7 @@ Route::middleware(Auth::class)->group(function () {
     Route::get('/stock', Stock::class)->name('stock');
     Route::get('/handover', Handover::class);
     Route::get('/handover-pdf/{id}', [Handover::class, 'exportPdf'])->name('handover.pdf');
+    Route::get('/loan', Loan::class);
     Route::get('/config', Config::class);
+    Route::get('/pc', Pc::class);
 });

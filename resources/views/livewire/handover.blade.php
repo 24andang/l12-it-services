@@ -91,7 +91,7 @@
                         <td>
                             <center>{{ $loop->iteration }}</center>
                         </td>
-                        <td> {{ $history->item->code }} </td>
+                        <td><a href="/handover-pdf/{{$history->id}}" target="_blank" rel="noopener noreferrer" title="Cetak pdf">{{ $history->item->code }}</a></td>
                         <td>{{ $history->item->name }}</td>
                         <td>{{ date('d/m/Y', strtotime($history->outcoming_date)) }}</td>
                         <td>{{ $history->recipient }}</td>

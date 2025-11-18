@@ -76,10 +76,10 @@ class Handover extends Component
     public function history()
     {
         $item = Item::where('code', $this->code)->first();
-        if ($item && $this->start_date && $this->end_date && $this->histories) {
+        if ($item && $this->start_date && $this->end_date) {
             $histories = ModelsHandover::where('item_id', $item->id)
-                ->where('outcoming_date', '>', $this->start_date)
-                ->where('outcoming_date', '<', $this->end_date)
+                ->where('outcoming_date', '>=', $this->start_date)
+                ->where('outcoming_date', '<=', $this->end_date)
                 ->with('item')
                 ->get();
             $this->histories = $histories;
